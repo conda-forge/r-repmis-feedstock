@@ -1,11 +1,11 @@
-About r-repmis
-==============
+About r-repmis-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-repmis-feedstock/blob/main/LICENSE.txt)
 
 Home: http://cran.r-project.org/package=repmis
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-repmis-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools to load 'R' packages and automatically generate BibTeX files citing them as well as load and cache plain-text and 'Excel' formatted data stored on 'GitHub', and from other sources.
 
