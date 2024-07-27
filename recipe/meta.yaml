@@ -1,6 +1,5 @@
 {% set version = '0.5' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-repmis
@@ -13,8 +12,7 @@ source:
   sha256: 65a5d32349baceb68e8761f3d585cb8450c5f22b2373a5005dd21341f592b57c
 
 build:
-  merge_build_host: True  # [win]
-  number: 3
+  number: 4
   noarch: generic
   rpaths:
     - lib/R/lib/
