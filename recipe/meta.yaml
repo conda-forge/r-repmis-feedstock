@@ -1,4 +1,4 @@
-{% set version = '0.5' %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/repmis_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/repmis/repmis_{{ version }}.tar.gz
-  sha256: 65a5d32349baceb68e8761f3d585cb8450c5f22b2373a5005dd21341f592b57c
+  sha256: 371f8e08f61a2f71d0b1582f170535f8b92b1ea66c328ddb02b1bf984e283f1d
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -44,9 +44,7 @@ test:
 about:
   home: http://cran.r-project.org/package=repmis
   license: GPL-3.0-only
-  summary: Tools to load 'R' packages and automatically generate BibTeX files citing them as
-    well as load and cache plain-text and 'Excel' formatted data stored on 'GitHub',
-    and from other sources.
+  summary: Tools to load 'R' packages and automatically generate BibTeX files citing them as well as load and cache plain-text and 'Excel' formatted data stored on 'GitHub', and from other sources.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
